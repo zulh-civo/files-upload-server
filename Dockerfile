@@ -18,4 +18,4 @@ RUN mkdir -p /data
 VOLUME /data
 
 EXPOSE 8008
-CMD [ "node", "./bin/file-server"]
+CMD ["sh","-c","cd /data && node /opt/app/bin/file-server -s"]
